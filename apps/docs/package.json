@@ -6,8 +6,10 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "storybook:dev": "start-storybook -p 6007",
-    "lint": "next lint"
+    "storybook:dev": "start-storybook -p 6006",
+    "lint": "next lint",
+    "storybook:build": "build-storybook --quiet",
+    "storybook:move": "mv storybook-static ../../storybook-static"
   },
   "dependencies": {
     "next": "13.0.0",

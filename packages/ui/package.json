@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "storybook:dev": "start-storybook -p 6008",
-    "storybook:build": "build-storybook",
+    "storybook:build": "build-storybook --quiet",
+    "storybook:move": "mv storybook-static ../../storybook-static/ui",
     "lint": "TIMING=1 eslint \"**/*.ts*\""
   },
   "devDependencies": {

@@ -1,27 +1,20 @@
 module.exports = {
-  staticDirs: [
-    '../../web/',
-    { from: '../../web/storybook-static/', to: 'web/storybook-static' },
-    { from: '../../../packages/ui/storybook-static/', to: 'ui/storybook-static' },
-  ],
   "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    "../**/*.stories.mdx",
+    "../**/*.stories.@(js|jsx|ts|tsx)"
   ],
   refs: [
     {
       title: 'Web',
-      url: 'web/storybook-static/',
-      // url: process.env.NODE_ENV === 'development'
-      //   ? 'http://localhost:6006'
-      //   : '../../web',
+      url: process.env.NODE_ENV === 'development'
+        ? 'http://localhost:6007/'
+        : 'web/',
     },
     {
       title: 'Ui',
-      url: 'ui/storybook-static/',
-      // url: process.env.NODE_ENV === 'development'
-      //   ? 'http://localhost:6006'
-      //   : '../../web',
+      url: process.env.NODE_ENV === 'development'
+        ? 'http://localhost:6008/'
+        : 'ui/',
     }
   ],
   features: {

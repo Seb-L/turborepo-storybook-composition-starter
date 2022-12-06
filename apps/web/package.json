@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook:dev": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "storybook:dev": "start-storybook -p 6007",
+    "storybook:build": "build-storybook --quiet",
+    "storybook:move": "mv storybook-static ../../storybook-static/web"
   },
   "dependencies": {
     "next": "13.0.0",

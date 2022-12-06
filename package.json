@@ -10,6 +10,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "storybook:dev": "turbo run storybook:dev --parallel",
+    "storybook:build": "turbo run storybook:build --parallel",
+    "storybook:move": "turbo run storybook:move --filter=docs && turbo run storybook:move --filter=!docs",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
